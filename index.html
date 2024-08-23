@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="input-section">
+            <label for="budget">Monthly Budget: </label>
+            <input type="number" id="budget" placeholder="Enter your budget">
+        </div>
+
+        <div class="input-section">
+            <label for="expense-name">Expense Name: </label>
+            <input type="text" id="expense-name" placeholder="Enter expense name">
+        </div>
+
+        <div class="input-section">
+            <label for="expense-amount">Expense Amount: </label>
+            <input type="number" id="expense-amount" placeholder="Enter expense amount">
+        </div>
+
+        <button id="add-expense">Add Expense</button>
+
+        <h2>Expenses</h2>
+        <ul id="expense-list"></ul>
+
+        <div class="summary">
+            <p>Total Budget: ₹<span id="total-budget">0</span></p>
+            <p>Total Expenses: ₹<span id="total-expenses">0</span></p>
+            <p>Money Left: ₹<span id="money-left">0</span></p>
+            <p>Savings for the Month: ₹<span id="savings">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
